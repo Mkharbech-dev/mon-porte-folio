@@ -20,6 +20,7 @@ body{
     top: 0;
     left: 0;
     border-right: 1px dashed #f1f1f1;
+    z-index: 5;
 }
 
 .details-menu{
@@ -77,6 +78,18 @@ body{
 @media screen and (max-width: 1300px) {
     .navigation{
         left: -300px !important;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        min-height: 300px;
+        width: 250px;
+    }
+     /* a chaque fois selectionez le 7eme element a partir du premier */
+     .details-menu:nth-child(7n+1){
+        display: none;
+    }
+    .navigation{
+        left: -300px !important;
     }
     .menu-visible{
         left: 0px !important;
@@ -90,14 +103,17 @@ body{
         top: 10px;
         left: 10px;
         z-index: 10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .cont-lignes{
         width: 35px;
         height: 35px;
         cursor: pointer;
-        position: absolute;
-        top: 25%;
-        left: 25%;
+        position: relative;
+        top: 0;
+        left: 0;
     }
     .btn-ligne-unique{
         width: 100%;
@@ -149,7 +165,6 @@ body{
     background-position: right;
     width: calc (100% - 300px);
     margin-left: 300px;
-    
     position: relative;
 }
 h1{
@@ -209,8 +224,15 @@ h1{
 @media screen and (max-width: 1300px) {
     .accueil{
     width: 100%;
-    background-position: center;
+    background-position: cover;
     margin-left: 0;
+    }
+    .active .btn-ligne-unique {
+        background: transparent;
+        color: #f1f1f1;
+        font-size: 50px;
+        top: -16px;
+        text-align: center;
     }
 }
 @media screen and (max-width: 1000px) {
@@ -219,7 +241,7 @@ h1{
     min-height: 0;
     }
     h1{
-        font-size: 50px;
+        font-size: 70px;
         margin: 0 30px 0 30px;
         padding-top: 100px;
     }
@@ -241,7 +263,7 @@ h1{
         height: 600px;
     }
     .h1{
-        font-size: 35px;
+        font-size: 50px;
         margin: 0 30px;
     }
     .txt-accueil{
@@ -255,13 +277,41 @@ h1{
     .cont-lignes{
         width: 30px;
         height: 30px;
-        top: 20%;
-        left: 24%;
+        top: 0;
+        left: 0;
     }
+    .btn-ligne-unique {
+        width: 100%;
+        height: 4px;
+        background: #f1f1f1;
+        position: absolute;
+        top: 12px;
+        bottom: 15px;
+    }
+    .media{
+        width: 40px;
+        height: 40px;
+        width: 60px;
+        height: 60px;
+        background: #333;
+        border-radius: 50%;
+        margin-right: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    .active .btn-ligne-unique {
+        background: transparent;
+        color: #f1f1f1;
+        font-size: 40px;
+        top: -7px;
+        text-align: center;
+    }   
 }
 @media screen and (max-width: 500px) {
     .h1{
-        font-size: 25px;
+        font-size: 35px;
     }
     .txt-accueil{
         font-size: 16px;
@@ -270,12 +320,15 @@ h1{
     .btn-rond{
         width: 60px;
         height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .cont-lignes{
         width: 30px;
         height: 30px;
-        top: 20%;
-        left: 24%;
+        top: 0;
+        left: 0;
     }
     .btn-acc{
         width: 120px;
@@ -283,17 +336,100 @@ h1{
         margin: 10px 0 0 5px;
         height: 40px;
     }
-    .medias{
+    .media{
         width: 40px;
         height: 40px;
+        width: 60px;
+        height: 60px;
+        background: #333;
+        border-radius: 50%;
+        margin-right: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
     }
     .icone-medias{
-        width: 20px;
+        border-radius: 50%;
+        margin-right: 10px;
+        width: 40px;
     }
     .btn-acc1{
         margin: 10px 0 0 30px;
     }
     .btn-acc3{
         margin: 10px 0 0 95px;
+    }
+    .btn-ligne-unique {
+        width: 100%;
+        height: 4px;
+        background: #f1f1f1;
+        position: absolute;
+        top: 15px;
+        bottom: 15px;
+        border-radius: 5px;}
+    .active .btn-ligne-unique {
+        background: transparent;
+        color: #f1f1f1;
+        font-size: 40px;
+        top: -7px;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 450px) {
+    .btn-rond{
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .cont-lignes{
+        width: 20px;
+        height: 38px;
+    }
+    .btn-ligne-uniques {
+        height: 3px;
+    }
+    .btn-ligne-unique::before {
+        bottom: 8px;
+        height: 3px;
+    }
+    .btn-ligne-unique::after {
+        top: 8px;
+        height: 3px;
+    }
+    .accueil {
+        height: 500px;
+        text-align: center;
+    }
+    h1 {
+        font-size: 35px;
+        margin: 0 30px 0 5px;
+        padding-top: 120px;
+    }
+    .txt-accueil {
+        margin: 30px 0 0 5px;
+    }
+    .btn-acc {
+        width: 100px;
+        font-size: 12px;
+        height: 35px;
+        margin: 30px 0 0 5px;
+    }
+    .medias {
+        margin-top: 30px;
+        margin-left: 5px;
+        justify-content: center;
+    }
+    .icone-medias {
+        width: 40px;
+    }
+    .active .btn-ligne-unique {
+        background: transparent;
+        color: #f1f1f1;
+        font-size: 40px;
+        top: -7px;
+        text-align: center;
     }
 }
