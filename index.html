@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./CSS/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:ital@1&display=swap"
         rel="stylesheet">
     <title>Portfolio</title>
@@ -25,21 +25,21 @@
         </div>
         <div class="details-menu">
             <span class="detail-menu-item">
-                <a href="#">
+                <a href="">
                     Accueil
                 </a>
             </span>
         </div>
         <div class="details-menu">
             <span class="detail-menu-item">
-                <a href="#">
+                <a href="#presentation">
                     À propos
                 </a>
             </span>
         </div>
         <div class="details-menu">
             <span class="detail-menu-item">
-                <a href="#">
+                <a href="#realisation">
                     Réalisations
                 </a>
             </span>
@@ -77,7 +77,7 @@
     <section class="accueil" id="accueil">
         <h1>Bienvenue sur mon portfolio</h1>
         <div class="txt-accueil">
-            Salah eddine M'kharbech, Développeur junior Java. <br>
+            <p class="txt-animation"></p> <br>
             <a href="#" class="btn-acc btn-acc1">Portfolio</a>
             <a href="#" class="btn-acc btn-acc2">Expériences</a>
             <a href="#" class="btn-acc btn-acc3">Télécharger CV</a>
@@ -97,10 +97,106 @@
             <div class="btn-rond-fleche">
                 <img src="./ressources/fleche.png" alt="logo fleche bas" class="logo-btn-rond-acc">
             </div>
-        </a>
-        
+        </a> 
     </section>
-   <script src="./app.js"></script>
+     <!-- ********************section présentation****************************** -->
+     <section class="presentation" id="presentation">
+         <h2 class="titre-presentation">Présentation</h2>
+         <div class="container-presentation">
+             <div class="fond-forme"></div>   
+             <div class="presentation-gauche">
+                 <h3>Concepteur Développeur d'application</h3>
+                 <hr>
+                 <p>Suite à une reconversion professionnelle et après des années au sein du groupe La Poste, aujourd'hui je suis en formation professionnelle auprès de L'AFPA de Paris pour obtenir un titre professionnel (Bac+3), intitulé Concepteur Développeur d'application.</p>
+                 <br>
+                 <p>En dessous vous trouvez tous les projets que j'ai réalisés depuis le début de formation en utilisant les langages de Front : HTML, CSS, JavaScript, Bootstrap ...etc.</p>
+                 <br>
+                 <p>Vous découvrirez dans ce portfolio, mes compétences et mon parcours ainsi que les projets que j'ai réalisé pendant et après ma formation et stage, dont ce mini-site qui sera régulierement mis à jours.</p>
+                 <br>
+                 <p>Je suis donc a la recherche d'une entreprise pour accomplir mon projet professionnel. Si vous avez des questions, n'hésitez pas à me contacter.</p>
+             </div>
+             <div class="presentation-droite">
+                 <ul class="liste-presentation">
+                     <li class="item-liste i1">
+                         <sapn class="chiffre-style">1.</sapn>
+                         <p class="txt-liste">Maquettage-Wireframing</p>
+                     </li>
+                     <li class="item-liste i2">
+                         <sapn class="chiffre-style">2.</sapn>
+                         <p class="txt-liste">Développement Front-End</p>
+                     </li>
+                     <li class="item-liste i3">
+                         <sapn class="chiffre-style">3.</sapn>
+                         <p class="txt-liste">Développement Back-End</p>
+                     </li>
+                     <li class="item-liste i4">
+                         <sapn class="chiffre-style">4.</sapn>
+                         <p class="txt-liste">Outil:VSC, Git, Git Hub</p>
+                     </li>
+                     <li class="item-liste i4">
+                        <sapn class="chiffre-style">5.</sapn>
+                        <p class="txt-liste">Bases de données: MySQL</p>
+                    </li>
+                 </ul>
+             </div>
+         </div>
+     </section>
+     <!-- ********************section mes réalisations****************************** -->
+     <div class="realisation" id="realisation">
+         <h2 class="titre-realisation">Mes réalisations</h2>
+         <div class="cont-realisation">
+             <div class="item vague1">
+                 <div class="cont-img-realisation">
+                     <img src="./ressources/bootstrap.jpg" alt="img realisation">
+                 </div>
+                 <h3>Mon Projet</h3>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.placeat similique</p>
+                 <a href="" class="btn-projets">Découvrez le projet</a>
+             </div>
+             <div class="item vague1">
+                <div class="cont-img-realisation">
+                    <img src="./ressources/html-css-js.jpg" alt="img realisation">
+                </div>
+                <h3>Mon Projet</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.placeat similique</p>
+                <a href="" class="btn-projets">Découvrez le projet</a>
+            </div>
+            <div class="item vague1">
+                <div class="cont-img-realisation">
+                    <img src="./ressources/js-jq.jpg" alt="img realisation">
+                </div>
+                <h3>Mon Projet</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.placeat similique</p>
+                <a href="" class="btn-projets">Découvrez le projet</a>
+            </div>
+            <div class="item vague2">
+                <div class="cont-img-realisation">
+                    <img src="./ressources/java.png" alt="img realisation">
+                </div>
+                <h3>Mon Projet</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.placeat similique</p>
+                <a href="" class="btn-projets">Découvrez le projet</a>
+            </div>
+            <div class="item vague2">
+                <div class="cont-img-realisation">
+                    <img src="./ressources/php-leader1-880x450.png" alt="img realisation">
+                </div>
+                <h3>Mon Projet</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.placeat similique</p>
+                <a href="" class="btn-projets">Découvrez le projet</a>
+            </div>
+            <div class="item vague2">
+                <div class="cont-img-realisation">
+                    <img src="./ressources/symfony.jpg" alt="img realisation">
+                </div>
+                <h3>Mon Projet</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.placeat similique</p>
+                <a href="" class="btn-projets">Découvrez le projet</a>
+            </div>
+         </div>
+     </div>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="./JS/app.js"></script>
 </body>
 
 </html>
