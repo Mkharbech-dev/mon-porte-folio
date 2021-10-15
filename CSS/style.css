@@ -98,7 +98,6 @@ body{
         left: 0px !important;
         display: flex;
         justify-content: space-evenly;
-        min-height: 900px;
     }
     .btn-rond{
         width: 70px;
