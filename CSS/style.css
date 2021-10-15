@@ -461,6 +461,10 @@ h1{
     border-top: 1px dashed #333 ;
     border-bottom: 1px dashed #333 ;
     color: #e7e7e7;
+    background-image: url('../ressources/images1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 300px 0px;
 }
 .fond-forme{
     background: #485563;
@@ -491,7 +495,7 @@ h1{
     flex-shrink: 0;
     margin-bottom: 50px;
     padding-left: 120px;
-    padding-top: 20;
+    padding-top: 25px;
 }
 .presentation-gauche h3{
    text-align: center;
@@ -504,6 +508,7 @@ h1{
 }
 .presentation-gauche p{
     text-align: justify;
+    font-size: 16px;
 }
 /* ************** */
 .presentation-droite{
@@ -532,6 +537,9 @@ h1{
     .titre-presentation{
         padding-left: 0px;
     }
+    .presentation{
+        background-position: initial;
+    } 
  }
 @media screen and (max-width: 1100px){
    .fond-forme{
@@ -562,6 +570,9 @@ h1{
    .presentation-droite{
         padding: 0 40px ;
    }
+   .presentation{
+    background-position: initial;
+} 
 }
 @media screen and (max-width: 700px){
     .container-presentation{
@@ -581,21 +592,33 @@ h1{
     .txt-liste{
        font-size: 17px;
     }
+    .presentation{
+        background-position: initial;
+    } 
+    
+}
+@media screen and (max-width : 500px) {
+    .presentation{
+        background-position: initial;
+    }  
 }
 /* *******************Mes réalisation********************** */
 .realisation{
     width: 100%;
+    background: rgb(5, 17, 70);
+    height: 100%vh;
+    color: #e7e7e7;
 }
 .titre-realisation{
     text-align: center;
-    padding: 50px 0;
+    padding: 25px 0;
     font-size: 50px;
     padding-left: 300px;
 }
 .cont-realisation{
     width: 100%;
     height: auto;
-    margin: 0 auto 100px auto;
+    /* margin: 0 auto 100px auto; */
     padding-left: 300px;
     display: flex;
     flex-wrap: wrap;
@@ -604,19 +627,19 @@ h1{
 }
 .item{
     margin: 20px;
-    width: 350px;
-    height: 430px;
+    width: 300px;
+    height: 340px;
     background: #f0f2f0  ;
     color: #333;
     transition: transform 0.3s ease-out;
-    box-shadow: 0 0 10px black;
+    box-shadow: 0 0 10px rgb(29, 124, 240);
 }
 .item:hover{
     transform: translateY(-5px)
 }
 .cont-img-realisation{
     width:  100%;
-    height: 220px;
+    height: 150px;
     overflow: hidden;
 }
 .cont-img-realisation img{
@@ -633,7 +656,7 @@ h1{
 }
 .btn-projets{
     display: block;
-    margin: 50px 30px;
+    margin: 20px;
     width: 180px;
     height: 50px;
     line-height: 50px;
@@ -675,7 +698,7 @@ h1{
 
 @media screen and (max-width: 500px){
     .titre-realisation {
-        margin: 10px 0;
+        margin: 0px 0;
         padding: 30px 0;
     }
     .item{
@@ -690,5 +713,404 @@ h1{
         height: 380px;
     }
 }
+/* ************** Mes compétence******************** */
+.section-range{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 400px;
+    border-top: 1px dashed #333;
+    background: #485563;
+    background-image: linear-gradient(to right, #010711, #093869) ;
+    color: white;
+    position: relative;
+    z-index: -1;
+}
+    
+.range-skill{
+    position: relative;
+}
+.titre-comp{
+    font-size: 40px;
+    text-align: center;
+    margin: 80px 0 90px 0;
+    padding-left: 300px;
+}
+.grille-skill{
+    display: grid;
+    grid-template: repeat(3,80px) / repeat(2, 450px);
+    grid-gap: 50px;
+    padding-left: 300px;
+}
+.barre-skill{
+    height: 15px;
+    background: rgb(201, 157, 62);
+    border-radius: 5px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.barre-grises{
+    border-radius: 5px;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    bottom: 0;
+    height: 15px;
+    width: 450px;
+    background: rgb(117, 112, 112); 
+}
+.b1{
+    width: 90%;
+}  
+.b2{
+    width: 75%;
+    background: rgb(207, 61, 142);
+}
+.b3{
+    width: 40%;
+    background: rgb(207, 61, 142);
+}
+.b4{
+    width: 80%;  
+}
+.b5{
+    width: 50%;
+}
+.b6{
+    width: 10%;
+    background: rgb(207, 61, 142);
+}
+.label-skill{
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+/* *******************media copétences*********************** */
+@media screen and (max-width : 1400px) {
+    .grille-skill{
+        grid-template: repeat(3, 80px)  / repeat(2, 400px);
+    }
+    .barre-grises{
+        width: 400px;
+    }
+    
+}
+@media screen and (max-width : 1300px) {
+    .section-range{
+        padding-left: 0;
+    }
+    .titre-comp{
+        padding-left: 0;
+    }
+    .grille-skill{
+        grid-template: repeat(6, 80px)  / 600px;
+        padding-left: 0;
+    }
+    .barre-grises{
+        width: 600px;
+    }
+}    
+@media screen and (max-width : 700px) {
+    .grille-skill{
+        grid-template: repeat(6, 80px)  / 400px;
+    }
+    .barre-grises{
+        width: 400px;
+    }
+}   
+@media screen and (max-width : 450px) {
+    .section-range{
+        padding-bottom: 100px;
+    }
+    .grille-skill{
+        grid-template: repeat(6, 80px)  / 300px;
+        grid-gap: 40px;
+    }
+    .barre-grises{
+        width: 300px;
+    }
+    .titre-comp{
+        font-size: 30px;
+        margin: 50px 0;
+    }
+    .label-skill{
+        font-size:20px;
+    }
+} 
+/*------------ Section experience travail --------- */
+
+.travail-exp {
+    width: calc(100% - 300px);
+    height: auto;
+    margin-left: auto;
+    padding-bottom: 100px;
+    background: #485563;
+    background-image: linear-gradient(to left, #010711, #093869) ;
+}
+
+.titre-travail-exp {
+    text-align: center;
+    padding: 70px 0;
+    font-size: 40px;
+    color: white;
+}
+.cont-exp-travail {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.barre-verticale {
+    height: 1000px;
+    width: 5px;
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    left: -30px;
+}
+.boule-ico {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #333;
+    background: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.boule-ico img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.flex-cont-bloc-exp {
+    width: 800px;
+    flex-shrink: 1;
+    height: 1000px;
+    position: relative;
+}
+.bloc {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 37.5px;
+    cursor: pointer;
+    border: 1px solid #333;
+    position: relative;
+}
+.contenu-bloc {
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+    background: white;
+    transition: transform 0.25s ease-in-out;
+    position: relative;
+    transform: translate(10px, -10px);
+}
+.contenu-bloc:hover {
+    transform: translate(0,0);
+}
+.bloc1 {
+    background: #fb97a0;
+}
+.bloc2 {
+    background: #bfe2ca;
+}
+.bloc3 {
+    background: #a6daef;
+}
+.bloc4 {
+    background: #d0e2ec;
+}
+.titre-section-bloc {
+    font-family: 'Abril Fatface', sans-serif;
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
+/* Media section travail exp */
+@media screen and (max-width: 1300px) {
+    .travail-exp {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 950px) {
+
+    .barre-verticale {
+        height: 1200px;
+    }
+    .bloc {
+        height: 250px;
+        margin-bottom: 37.5px;
+    }
+    .barre-verticale{
+        margin-left: 60px;
+    }
+    .flex-cont-bloc-exp {
+        margin-right: 30px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+
+    .txt-section  {
+        font-size: 16px;
+    }
+    .bloc {
+        height: 400px;
+    }
+    .barre-verticale {
+        height: 1800px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+
+        .txt-section {
+            font-size: 15px;
+        }
+}  
+/* Section Contact */
+
+.section-contact {
+    width: 100%; 
+    height: auto;
+   background: #fff;
+   padding-bottom: 110px;
+}
+.section-contact h2 {
+    text-align: center;
+    color: #333;
+    font-size: 48px;
+    font-weight: 400;
+    margin-bottom: 50px;
+    padding: 70px 0 0 300px;
+}
+.section-contact h2 strong {
+    font-weight: 900;
+}
+
+.container-form {
+    margin: 0 auto;
+    width: 70%;
+    padding-left: 300px;
+}
+.form-groupe {
+    position: relative;
+    display: flex;
+    margin-bottom: 45px;
+}
+.form-groupe input {
+    display: block;
+    width: 100%;
+    padding: 10px 0px;
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 3px solid #aaa;
+    color: #666;
+    font-size: 20px;
+    transition: 0.4s ease-out;
+}
+textarea {
+    width: 100%;
+    height: 200px;
+    border: none;
+    border: 3px solid #aaa;
+    border-radius: 3px;
+    padding: 5px;
+    resize: none;
+    outline: none;
+    font-size: 20px;
+    transition: 0.4s all ease-out;
+    background: #f1f1f1;
+}
+textarea::placeholder {
+    font-size: 20px;
+    opacity: 0.5;
+}
+textarea:focus {
+    border-color: #8b97d7;
+}
+
+.form-groupe:nth-child(4) {
+    margin-bottom: 25px;
+    justify-content: flex-start;
+}
+
+.form-groupe .button-sub {
+    display: block;
+    width: auto;
+    padding: 15px 60px;
+    border: 3px solid rgb(144,144,144);
+    border-radius: 999px;
+    background-image: linear-gradient(to right, transparent 50%, rgb(65,65,65) 50%, rgb(134,134,134));
+    background-size: 200%;
+    color: #333;
+    font-size: 24px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.form-groupe .button-sub:hover {
+    color: #fff;
+    background-position: 100%;
+    border: 3px solid #fff;
+}
+.status{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.status.success{
+    background: greenyellow;
+    visibility: visible;
+    animation: 0s linear 2.3s forwards status ;
+}
+.status.error{
+    background: red;
+    color: white;
+    animation: 0s linear 2.3s forwards status ;
+}
+
+@keyframes status{
+    to {
+        visibility: hidden;
+      }
+}
 
 
+@media screen and (max-width: 1300px) {
+    .section-contact h2 {
+        padding: 70px 0 0 0;
+    }
+    .container-form{
+        padding-left: 0;
+    }
+    .form-groupe:nth-child(4){
+        justify-content: center;
+    }
+}
+
+/* Footer */
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding-top: 100px;
+    padding-left: 300px;
+
+}
+@media screen and (max-width: 1300px) {
+    footer {
+        padding-left: 0px;
+    }
+}
