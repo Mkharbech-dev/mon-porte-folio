@@ -606,6 +606,7 @@ h1{
     background: rgb(5, 17, 70);
     height: 100%vh;
     color: #e7e7e7;
+    border-top: 1px dashed white ;
 }
 .titre-realisation{
     text-align: center;
@@ -720,7 +721,7 @@ h1{
     align-items: center;
     flex-direction: column;
     padding-bottom: 400px;
-    border-top: 1px dashed #333;
+    border-top: 1px dashed white ;
     background: #485563;
     background-image: linear-gradient(to right, #010711, #093869) ;
     color: white;
@@ -847,6 +848,7 @@ h1{
     padding-bottom: 100px;
     background: #485563;
     background-image: linear-gradient(to left, #010711, #093869) ;
+    border-top: 1px dashed white ;
 }
 
 .titre-travail-exp {
@@ -981,10 +983,13 @@ h1{
     height: auto;
    background: #fff;
    padding-bottom: 110px;
+   background: #485563;
+   background-image: linear-gradient(to left, #010711, #093869) ;
+   border-top: 1px dashed white ;
 }
 .section-contact h2 {
     text-align: center;
-    color: #333;
+    color: white;
     font-size: 48px;
     font-weight: 400;
     margin-bottom: 50px;
@@ -1012,7 +1017,7 @@ h1{
     outline: none;
     background: none;
     border-bottom: 3px solid #aaa;
-    color: #666;
+    color: white;
     font-size: 20px;
     transition: 0.4s ease-out;
 }
@@ -1050,7 +1055,7 @@ textarea:focus {
     border-radius: 999px;
     background-image: linear-gradient(to right, transparent 50%, rgb(65,65,65) 50%, rgb(134,134,134));
     background-size: 200%;
-    color: #333;
+    color: white;
     font-size: 24px;
     font-weight: 500;
     cursor: pointer;
@@ -1101,11 +1106,15 @@ textarea:focus {
 /* Footer */
 
 footer {
+    font-size: 20px;
     width: 100%;
     text-align: center;
-    padding-top: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     padding-left: 300px;
-
+    border-top: 1px dashed white ;
+    background-color: black;
+    color: white;
 }
 @media screen and (max-width: 1300px) {
     footer {
