@@ -97,7 +97,7 @@ body{
     .menu-visible{
         left: 0px !important;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
     }
     .btn-rond{
         width: 70px;
