@@ -436,7 +436,7 @@ h1{
         background: transparent;
         color: #f1f1f1;
         font-size: 40px;
-        top: -9px;
+        top: -10px;
         text-align: center;
     }
 }
@@ -770,7 +770,7 @@ h1{
     background: rgb(207, 61, 142);
 }
 .b3{
-    width: 40%;
+    width: 70%;
     background: rgb(207, 61, 142);
 }
 .b4{
