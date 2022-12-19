@@ -47,7 +47,7 @@ typewriter.typeString('Salah eddine M\'kharbech, ')
           .typeString('<span style =" color: #ff3964;"> Javascript</span> !')
           .pauseFor(1000)
           .deleteChars(12)
-          .typeString('<span style =" color: rgb(236, 154, 45);"> Java</span> !')
+          .typeString('<span style =" color: rgb(236, 154, 45);"> PHP, SYMFONY, DRUPAL</span> !')
           .start();
 //**************** *****contact************************************/ 
 var form = document.getElementById("my-form");
